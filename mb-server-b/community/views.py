@@ -12,8 +12,8 @@ from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
 
 #커스텀 파일 or 로컬 파일
-from .serializers import CommunitySerializer
-from . models import Community
+from .serializers import CommunitySerializer, MovieSerializer
+from . models import Community, Movie
 # from community import serializers
 
 
@@ -50,3 +50,10 @@ def community_detail(request, community_id):
     elif request.method == 'DELETE':
         community.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+# 전체 게시글 조회하기.
+@api_view(['GET'])
+def community_json_1(request):
+    movies = Movie.objects.all()
+    serializer = MovieSerializer(movies, many=True)
+    return Response(serializer.data)

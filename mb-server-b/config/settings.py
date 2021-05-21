@@ -37,7 +37,7 @@ INSTALLED_APPS = [
 
     # Third-party packages
     'corsheaders',
-    # 'rest_framework',
+    'rest_framework',
 
     # Django core packages
     'django.contrib.admin',

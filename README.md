@@ -1,2 +1,1 @@
-잘되낭
-
+2021/05/21 - community, accounts 업데이트  

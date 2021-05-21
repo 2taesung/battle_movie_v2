@@ -3,7 +3,7 @@
 
 #외부 라이브러리
 from django.shortcuts import get_object_or_404
-import community
+# import community
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -14,7 +14,7 @@ from django.shortcuts import get_object_or_404
 #커스텀 파일 or 로컬 파일
 from .serializers import CommunitySerializer
 from . models import Community
-from community import serializers
+# from community import serializers
 
 
 # Create your views here.

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-22T07:10:25.923Z" agent="5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="X0xRcCYRCRpDhB9-Uo1l" version="14.6.13" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-22T07:14:05.607Z" agent="5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="k366ITlxN_6rkIIIQZiW" version="14.6.13" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="872" dy="487" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -92,7 +92,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="KFXaSv4DiwfgcblU037Y-1" value="BattleListVote.vue" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="KFXaSv4DiwfgcblU037Y-1" value="BattleVote.vue" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="700" y="320" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="KFXaSv4DiwfgcblU037Y-2" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="KFXaSv4DiwfgcblU037Y-1">

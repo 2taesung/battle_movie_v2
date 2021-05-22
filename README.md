@@ -6,3 +6,5 @@
 
 - git branch backend
 - git branch front
+
+이상하다 ..

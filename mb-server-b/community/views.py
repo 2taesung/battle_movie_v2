@@ -12,8 +12,8 @@ from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
 
 #커스텀 파일 or 로컬 파일
-from .serializers import CommunitySerializer
-from . models import Community
+from .serializers import CommunitySerializer, MovieSerializer
+from . models import Community, Movie
 # from community import serializers
 
 
@@ -21,9 +21,9 @@ from . models import Community
 @api_view(['GET', 'POST'])
 def community_list(request):
     if request.method == 'GET':
-        community= Community.objects.all()
-        serializer = CommunitySerializer(community, many=True)
-        return Response(data=serializer.data)
+        movies= Movie.objects.all()
+        serializer = MovieSerializer(movies, many=True)
+        return Response(serializer.data)
 
     elif request.method == 'POST':
         serializer = CommunitySerializer(data=request.data) # 바인딩
@@ -50,3 +50,10 @@ def community_detail(request, community_id):
     elif request.method == 'DELETE':
         community.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+# # 전체 게시글 조회하기.
+# @api_view(['GET'])
+# def community_json_1(request):
+#     movies = Movie.objects.all()
+#     serializer = MovieSerializer(movies, many=True)
+#     return Response(serializer.data)
